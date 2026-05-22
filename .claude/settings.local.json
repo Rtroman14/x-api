@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init *)",
+      "Bash(npm pkg *)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p /Users/ryanroman/Documents/x-api/.vscode)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:docs.x.com)",
+      "WebFetch(domain:developer.x.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://docs.x.com/x-api/posts/timelines\")",
+      "WebFetch(domain:claude.com)",
+      "WebFetch(domain:vercel.com)",
+      "mcp__21cb699a-7d0e-4b04-b985-2032cfd58d8d__slack_search_channels"
+    ]
+  }
+}
