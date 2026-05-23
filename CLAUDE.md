@@ -95,4 +95,4 @@ After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
 - Append all tweet IDs and blog URLs from this briefing to `coveredStoryIds`
 
-Commit and push the updated `briefing-history.json` back to the repo. This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
+Commit and push the updated `briefing-history.json` directly to the `main` branch. Do not create a separate branch or pull request — push straight to main. This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
