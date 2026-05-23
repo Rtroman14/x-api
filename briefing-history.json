@@ -1,4 +1,23 @@
 {
-    "lastRunDate": null,
-    "coveredStoryIds": []
+    "lastRunDate": "2026-05-23",
+    "coveredStoryIds": [
+        "2056753169888334312",
+        "2056645485696315581",
+        "2056740346529468717",
+        "2057946803685974482",
+        "2056454359685476491",
+        "2056434422229123106",
+        "2056403446056784288",
+        "2056835339193561170",
+        "2056415413077233983",
+        "2057913121558413770",
+        "2056803731367456993",
+        "2057167359593603471",
+        "2057411932710166657",
+        "2057854080454631528",
+        "2057110441864696164",
+        "https://claude.com/blog/claude-managed-agents-updates",
+        "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+        "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude"
+    ]
 }
