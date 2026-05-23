@@ -21,14 +21,13 @@ Read `briefing-history.json` in this project directory. Calculate how many days 
 Run the tweet fetcher to pull posts from all accounts listed in `accounts.json`:
 
 ```bash
-cd /Users/ryanroman/Documents/x-api && node -e "
-  require('dotenv/config');
+node -e "
   const { fetchAllAccountTweets } = require('./fetch-tweets.js');
   fetchAllAccountTweets(DAYS_SINCE_LAST_RUN).then(r => console.log(JSON.stringify(r, null, 2)));
 "
 ```
 
-Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1.
+Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1. The X API key is available as an environment variable — no `.env` file is needed.
 
 ### Step 3: Check blog watchlist
 
@@ -96,4 +95,4 @@ After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
 - Append all tweet IDs and blog URLs from this briefing to `coveredStoryIds`
 
-This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
+Commit and push the updated `briefing-history.json` back to the repo. This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
