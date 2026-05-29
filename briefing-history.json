@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-05-23",
+    "lastRunDate": "2026-05-29",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -18,6 +18,24 @@
         "2057110441864696164",
         "https://claude.com/blog/claude-managed-agents-updates",
         "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
-        "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude"
+        "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
+        "2060042702150930686",
+        "2060042706844315866",
+        "2060042710753382816",
+        "2060044853279617150",
+        "2059385239781384341",
+        "2059701677981413812",
+        "2060043213600367030",
+        "2060025063899058458",
+        "2059934011124826124",
+        "2058900756640453072",
+        "2058638344716722681",
+        "2059301963590672713",
+        "2059008544477757887",
+        "2058923630960988300",
+        "2059662933924123044",
+        "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+        "https://claude.com/blog/using-llms-to-secure-source-code",
+        "https://claude.com/blog/zero-trust-for-ai-agents"
     ]
 }
