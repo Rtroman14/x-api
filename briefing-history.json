@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-05-29",
+    "lastRunDate": "2026-06-01",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -36,6 +36,19 @@
         "2059662933924123044",
         "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
         "https://claude.com/blog/using-llms-to-secure-source-code",
-        "https://claude.com/blog/zero-trust-for-ai-agents"
+        "https://claude.com/blog/zero-trust-for-ai-agents",
+        "2060406013098897765",
+        "2060406014478831842",
+        "2060432688281251998",
+        "2060432691288576207",
+        "2060432690093187222",
+        "2060432692882395376",
+        "2061129813750915508",
+        "2060454199838544079",
+        "2060454591305527750",
+        "2060350423609827515",
+        "2061005409779925351",
+        "https://claude.com/blog/how-coderabbit-used-claude-to-build-an-agent-orchestration-system",
+        "https://vercel.com/blog/how-conductor-moved-parallel-coding-agents-from-the-laptop-to-the-cloud-with-vercel-sandbox"
     ]
 }
