@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-05-29",
+    "lastRunDate": "2026-06-03",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -36,6 +36,21 @@
         "2059662933924123044",
         "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
         "https://claude.com/blog/using-llms-to-secure-source-code",
-        "https://claude.com/blog/zero-trust-for-ai-agents"
+        "https://claude.com/blog/zero-trust-for-ai-agents",
+        "2061877343078244459",
+        "2060432688281251998",
+        "2061947411141169494",
+        "2061900434722496604",
+        "2061501787769893055",
+        "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
+        "https://claude.com/blog/running-an-ai-native-engineering-org",
+        "2061878340265656620",
+        "2060406013098897765",
+        "2061550723503194426",
+        "2060454199838544079",
+        "2062139630955184170",
+        "2062129440558047545",
+        "2061005409779925351",
+        "2060350423609827515"
     ]
 }
