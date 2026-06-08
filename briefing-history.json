@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-05-29",
+    "lastRunDate": "2026-06-08",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -36,6 +36,25 @@
         "2059662933924123044",
         "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
         "https://claude.com/blog/using-llms-to-secure-source-code",
-        "https://claude.com/blog/zero-trust-for-ai-agents"
+        "https://claude.com/blog/zero-trust-for-ai-agents",
+        "2063018337567670285",
+        "2061877343078244459",
+        "2061947411141169494",
+        "2062257177788858398",
+        "2061900434722496604",
+        "2060432688281251998",
+        "2062950344687272144",
+        "2061878340265656620",
+        "2060406013098897765",
+        "2062804592358773005",
+        "2062461341223317789",
+        "2062825992486269441",
+        "2060454199838544079",
+        "2062139630955184170",
+        "2062603989691044244",
+        "https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills",
+        "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+        "https://claude.com/blog/running-an-ai-native-engineering-org",
+        "https://vercel.com/blog/protecting-against-token-theft"
     ]
 }
