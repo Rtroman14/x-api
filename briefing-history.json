@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-06-08",
+    "lastRunDate": "2026-06-12",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -55,6 +55,30 @@
         "https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills",
         "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
         "https://claude.com/blog/running-an-ai-native-engineering-org",
-        "https://vercel.com/blog/protecting-against-token-theft"
+        "https://vercel.com/blog/protecting-against-token-theft",
+        "2064394146916229443",
+        "2064409694761054332",
+        "2064399512664526853",
+        "2064394926469840957",
+        "2064394925358366821",
+        "2064949876463645026",
+        "2064428347678220691",
+        "2064428351029449214",
+        "2064741184547795408",
+        "2065080005328249086",
+        "2065137803084857845",
+        "2064774675021119825",
+        "2063988995692900439",
+        "2064023481398824993",
+        "2064663221718425660",
+        "2064318240038273438",
+        "2065147088288256389",
+        "2064756984617021807",
+        "2064072801062121906",
+        "2064032814392352816",
+        "2064477195532226955",
+        "https://claude.com/blog/whats-new-in-claude-managed-agents",
+        "https://claude.com/blog/claude-for-foundation-models",
+        "https://claude.com/blog/observability-for-developers-building-connectors"
     ]
 }
