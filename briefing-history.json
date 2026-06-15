@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-06-12",
+    "lastRunDate": "2026-06-15",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -79,6 +79,11 @@
         "2064477195532226955",
         "https://claude.com/blog/whats-new-in-claude-managed-agents",
         "https://claude.com/blog/claude-for-foundation-models",
-        "https://claude.com/blog/observability-for-developers-building-connectors"
+        "https://claude.com/blog/observability-for-developers-building-connectors",
+        "2065597942602531163",
+        "2065494480837583297",
+        "2066451514672009337",
+        "2066498727854886986",
+        "2065773938915889253"
     ]
 }
