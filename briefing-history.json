@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-06-17",
+    "lastRunDate": "2026-06-22",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -115,6 +115,30 @@
         "https://vercel.com/blog/introducing-vercel-connect",
         "https://vercel.com/blog/vercel-for-enterprise-apps-and-agents",
         "https://claude.com/blog/building-with-claude-managed-agents",
-        "https://claude.com/blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon"
+        "https://claude.com/blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon",
+        "2067671912038240487",
+        "2067672094209675373",
+        "2067671914533863585",
+        "https://claude.com/blog/artifacts-in-claude-code",
+        "2067391951725629941",
+        "2067325887909884315",
+        "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+        "2067655887662272723",
+        "2067655890166247690",
+        "2067655889050571036",
+        "2067655891378491888",
+        "https://claude.com/blog/enterprise-managed-auth",
+        "2067683814516858962",
+        "2067683817113137173",
+        "2067683818488930393",
+        "2067366343817805899",
+        "2067378592938418422",
+        "2067378591101235666",
+        "2067259590488510471",
+        "2067966169860931606",
+        "2068372696690315650",
+        "2068428955816759773",
+        "2067899664209187273",
+        "2068680605705838808"
     ]
 }
