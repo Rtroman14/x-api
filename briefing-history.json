@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-06-26",
+    "lastRunDate": "2026-06-29",
     "coveredStoryIds": [
         "2056753169888334312",
         "2056645485696315581",
@@ -215,6 +215,10 @@
         "2069895377080443271",
         "https://vercel.com/blog/ai-sdk-7",
         "https://vercel.com/blog/teaching-agents-product-design-at-vercel",
-        "https://claude.com/blog/building-effective-human-agent-teams"
+        "https://claude.com/blog/building-effective-human-agent-teams",
+        "2070918939526205494",
+        "2071288332642812229",
+        "2071562244404490633",
+        "2070923650526589292"
     ]
 }
