@@ -1,6 +1,17 @@
 {
-    "lastRunDate": "2026-07-06",
+    "lastRunDate": "2026-07-08",
     "coveredStoryIds": [
+        "2074548243971604641",
+        "2074606058128224365",
+        "2074149038266449959",
+        "2074218527884464523",
+        "2074464823232888987",
+        "2074519686201348408",
+        "https://claude.com/blog/cowork-web-mobile",
+        "https://claude.com/blog/how-people-are-using-claude-cowork",
+        "https://claude.com/blog/claude-model-and-effort-level-in-claude-code",
+        "https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns",
+        "https://vercel.com/blog/vercel-acquires-better-auth",
         "2056753169888334312",
         "2056645485696315581",
         "2056740346529468717",
