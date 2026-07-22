@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-07-20",
+    "lastRunDate": "2026-07-22",
     "coveredStoryIds": [
         "2077840057130692886",
         "2077840058896515437",
@@ -417,6 +417,27 @@
         "https://claude.com/blog/working-at-the-frontier-cursor",
         "https://claude.com/blog/ciso-guide-to-agentic-ai",
         "2079150593524772864",
-        "2078531666348224645"
+        "2078531666348224645",
+        "2079879414297330146",
+        "2079506509411635549",
+        "2079318617041035618",
+        "2079193858190041399",
+        "2079610838143623371",
+        "2079595988998554047",
+        "2079615536963485815",
+        "2079256616407273801",
+        "2079256614238814551",
+        "2079589716899311848",
+        "2079589629439668701",
+        "2079674434940801391",
+        "2079674433854452046",
+        "2079674432038248611",
+        "2079315551206379890",
+        "2079315550182985779",
+        "2079315549163778366",
+        "https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+        "https://claude.com/blog/how-datadog-built-a-universal-machine-tool-for-claude-code",
+        "https://claude.com/blog/working-at-the-frontier-rakuten",
+        "https://vercel.com/blog/how-searchable-ships-customer-requested-features-in-30-minutes-on-vercel"
     ]
 }
