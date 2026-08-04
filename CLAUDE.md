@@ -8,6 +8,8 @@ Ryan is a technical founder and AI engineer. He builds AI agents with JavaScript
 
 He's interested in: prompt engineering, AI agent harnesses, agent tools/skills/workflows, new model releases and capabilities, AI coding tools, and LLM best practices. He wants to stay ahead of the curve on anything that affects how he builds with AI day-to-day.
 
+He also runs a side business, Romey, an AI sales agent for contractors. Its core feature is an AI receptionist that handles inbound calls and books appointments, built on Vapi voice agents. So anything affecting how Vapi voice agents are built, priced, or operated is directly relevant: new models and voices available to assistants, latency and cost changes, call transfer and telephony behavior, tool/function calling, testing and evals, and monitoring. Treat Vapi platform changes as production concerns, not general industry news.
+
 ## Scheduled Task: AI Briefing
 
 Runs every Monday, Wednesday, and Friday.
@@ -31,12 +33,32 @@ Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1. The X API ke
 
 ### Step 3: Check blog watchlist
 
-Fetch these blogs and check for new posts published since the last run date:
+Run the blog fetcher. Do not fetch these pages directly with WebFetch: blog index pages go stale and Vapi renders client side, so direct fetches silently miss posts.
 
-- https://claude.com/blog — Anthropic product updates, model releases, feature announcements
-- https://vercel.com/blog — AI SDK updates, AI-related platform features
+```bash
+node -e "
+  const { fetchAllBlogUpdates } = require('./fetch-blogs.js');
+  fetchAllBlogUpdates(DAYS_SINCE_LAST_RUN).then(r => console.log(JSON.stringify(r, null, 2)));
+"
+```
 
-Only include posts that are genuinely new and relevant to Ryan's interests.
+Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1. Each source is fetched independently, so one failing does not stop the others. Watch the output for `Failed to fetch` lines and mention any dead source in the briefing rather than reporting it as "nothing new."
+
+The watchlist:
+
+| Source | Covers | Returned as |
+| --- | --- | --- |
+| https://claude.com/blog | Anthropic product updates, model releases, feature announcements | `claude` |
+| https://vercel.com/blog | AI SDK updates, AI-related platform features | `vercel` |
+| https://vapi.ai/blog/category/agent_building | voice agent building techniques | `vapi.blogPosts` |
+| https://vapi.ai/blog/category/features | new Vapi product features | `vapi.blogPosts` |
+| https://docs.vapi.ai/whats-new | the weekly Vapi changelog | `vapi.changelog` |
+
+`claude`, `vercel`, and `vapi.blogPosts` each return the title, URL, and date of every post in the window. Only include posts genuinely relevant to Ryan's interests.
+
+`vapi.changelog` returns the full Markdown of each weekly entry, which is usually a batch of many small items (new models, new voices, bug fixes, API changes). Do not summarize a whole week as one story. Pull out only the individual items that matter for Romey and write each as its own story, or group closely related items into one. Cite the weekly entry URL as the source. Ignore items that don't touch how Romey's receptionist runs, such as changes to unrelated providers or SDKs Ryan doesn't use.
+
+Vercel's feed also carries their `/changelog`, which is deliberately excluded from the watchlist.
 
 ### Step 4: Filter the results
 
@@ -45,6 +67,7 @@ Include tweets and blog posts that:
 - Teach a technique or share a practical workflow
 - Share a tool, repo, or resource worth knowing about
 - Contain meaningful AI engineering insights
+- Change how Vapi voice agents get built, priced, or operated (relevant to Romey)
 
 Skip anything that is:
 - Hot takes, engagement bait, or personal drama
@@ -76,6 +99,12 @@ For blog sources, link to the specific post and use the blog name:
 Source: [Claude Blog](https://claude.com/blog/post-slug)
 ```
 
+For Vapi sources, use the blog or the dated changelog entry:
+```
+Source: [Vapi Blog](https://vapi.ai/blog/post-slug)
+Source: [Vapi Changelog](https://docs.vapi.ai/whats-new/2026/7/27)
+```
+
 Formatting rules:
 - Opening line: **AI Briefing — [Day, Month Date]**
 - Use double asterisks for bold (Slack rendering)
@@ -93,6 +122,8 @@ Search for the #ai-news channel using slack_search_channels with query "ai-news"
 
 After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
-- Append all tweet IDs and blog URLs from this briefing to `coveredStoryIds`
+- Append all tweet IDs, blog URLs, and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
+
+When several stories come from one weekly Vapi changelog entry, record that entry's URL once.
 
 Commit and push the updated `briefing-history.json` directly to the `main` branch. Do not create a separate branch or pull request — push straight to main. This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
