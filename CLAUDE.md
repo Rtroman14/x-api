@@ -33,33 +33,32 @@ Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1. The X API ke
 
 ### Step 3: Check blog watchlist
 
-Fetch these blogs and check for new posts published since the last run date:
-
-- https://claude.com/blog — Anthropic product updates, model releases, feature announcements
-- https://vercel.com/blog — AI SDK updates, AI-related platform features
-
-Only include posts that are genuinely new and relevant to Ryan's interests.
-
-### Step 3b: Check Vapi
-
-Vapi's pages render client side, so plain page fetches come back empty or partial. Use the fetcher instead of fetching those URLs directly:
+Run the blog fetcher. Do not fetch these pages directly with WebFetch: blog index pages go stale and Vapi renders client side, so direct fetches silently miss posts.
 
 ```bash
 node -e "
-  const { fetchAllVapiUpdates } = require('./fetch-vapi.js');
-  fetchAllVapiUpdates(DAYS_SINCE_LAST_RUN).then(r => console.log(JSON.stringify(r, null, 2)));
+  const { fetchAllBlogUpdates } = require('./fetch-blogs.js');
+  fetchAllBlogUpdates(DAYS_SINCE_LAST_RUN).then(r => console.log(JSON.stringify(r, null, 2)));
 "
 ```
 
-This covers:
+Replace `DAYS_SINCE_LAST_RUN` with the number calculated in Step 1. Each source is fetched independently, so one failing does not stop the others. Watch the output for `Failed to fetch` lines and mention any dead source in the briefing rather than reporting it as "nothing new."
 
-- https://vapi.ai/blog/category/agent_building — voice agent building techniques
-- https://vapi.ai/blog/category/features — new Vapi product features
-- https://docs.vapi.ai/whats-new — the weekly changelog
+The watchlist:
 
-`blogPosts` returns the title, URL, and date of each post in the watched categories. `changelog` returns the full Markdown of each weekly entry, which is usually a batch of many small items (new models, new voices, bug fixes, API changes).
+| Source | Covers | Returned as |
+| --- | --- | --- |
+| https://claude.com/blog | Anthropic product updates, model releases, feature announcements | `claude` |
+| https://vercel.com/blog | AI SDK updates, AI-related platform features | `vercel` |
+| https://vapi.ai/blog/category/agent_building | voice agent building techniques | `vapi.blogPosts` |
+| https://vapi.ai/blog/category/features | new Vapi product features | `vapi.blogPosts` |
+| https://docs.vapi.ai/whats-new | the weekly Vapi changelog | `vapi.changelog` |
 
-For the changelog, do not summarize a whole week as one story. Pull out only the individual items that matter for Romey and write each as its own story, or group closely related items into one. Cite the weekly entry URL as the source. Ignore items that don't touch how Romey's receptionist runs, such as changes to unrelated providers or SDKs Ryan doesn't use.
+`claude`, `vercel`, and `vapi.blogPosts` each return the title, URL, and date of every post in the window. Only include posts genuinely relevant to Ryan's interests.
+
+`vapi.changelog` returns the full Markdown of each weekly entry, which is usually a batch of many small items (new models, new voices, bug fixes, API changes). Do not summarize a whole week as one story. Pull out only the individual items that matter for Romey and write each as its own story, or group closely related items into one. Cite the weekly entry URL as the source. Ignore items that don't touch how Romey's receptionist runs, such as changes to unrelated providers or SDKs Ryan doesn't use.
+
+Vercel's feed also carries their `/changelog`, which is deliberately excluded from the watchlist.
 
 ### Step 4: Filter the results
 
