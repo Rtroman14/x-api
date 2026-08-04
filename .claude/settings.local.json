@@ -11,6 +11,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://docs.x.com/x-api/posts/timelines\")",
       "WebFetch(domain:claude.com)",
       "WebFetch(domain:vercel.com)",
+      "WebFetch(domain:vapi.ai)",
+      "WebFetch(domain:docs.vapi.ai)",
       "mcp__21cb699a-7d0e-4b04-b985-2032cfd58d8d__slack_search_channels"
     ]
   }
