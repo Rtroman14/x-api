@@ -1,6 +1,13 @@
 {
-    "lastRunDate": "2026-08-10",
+    "lastRunDate": "2026-08-12",
     "coveredStoryIds": [
+        "2086891169217122586",
+        "2087111966854730148",
+        "2086839443084701816",
+        "2086838432102228008",
+        "https://vercel.com/blog/deepseek-overtakes-google-on-volume-cost-per-token-falls",
+        "https://vercel.com/blog/a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+        "https://vercel.com/blog/everything-hackable-will-get-hacked",
         "https://claude.com/blog/auto-mode-default-in-claude-code",
         "https://claude.com/blog/auto-mode-in-production",
         "2085794862608318627",
