@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-08-12",
+    "lastRunDate": "2026-08-14",
     "coveredStoryIds": [
         "2086891169217122586",
         "2087111966854730148",
@@ -582,6 +582,26 @@
         "https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle",
         "https://claude.com/blog/how-datadog-built-a-universal-machine-tool-for-claude-code",
         "https://claude.com/blog/working-at-the-frontier-rakuten",
-        "https://vercel.com/blog/how-searchable-ships-customer-requested-features-in-30-minutes-on-vercel"
+        "https://vercel.com/blog/how-searchable-ships-customer-requested-features-in-30-minutes-on-vercel",
+        "https://claude.com/blog/cowork-chrome-side-panel",
+        "2087635263774232617",
+        "2087635262390026525",
+        "https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room",
+        "https://claude.com/blog/self-service-data-analytics-in-slack-how-anthropic-deploys-claude-tag-for-ad-hoc-questions",
+        "https://claude.com/blog/how-jetbrains-evaluates-and-deploys-claude-fable-5",
+        "2088256526372815234",
+        "2088256432265167185",
+        "2088249881718919393",
+        "2087941310217064850",
+        "2087941309013397970",
+        "2087941307624980753",
+        "2087991786279251993",
+        "2087961799190807008",
+        "2087961787107041381",
+        "2087566122812145966",
+        "2087566110254391548",
+        "https://vercel.com/blog/building-a-software-factory-for-ai-sdk",
+        "2088014831605702937",
+        "2087703542979014958"
     ]
 }
