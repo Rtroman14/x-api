@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-08-26",
+    "lastRunDate": "2026-08-28",
     "coveredStoryIds": [
         "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
         "2092299710002319742",
@@ -681,6 +681,24 @@
         "2087566110254391548",
         "https://vercel.com/blog/building-a-software-factory-for-ai-sdk",
         "2088014831605702937",
-        "2087703542979014958"
+        "2087703542979014958",
+        "https://claude.com/blog/claude-in-chrome-generally-available",
+        "2092755574563741871",
+        "https://claude.com/blog/cowork-built-in-browser",
+        "2092755573183828193",
+        "2092755571455758427",
+        "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+        "https://vercel.com/blog/the-best-workflow-engine-is-a-programming-language",
+        "2093077549786300747",
+        "2093077548649570777",
+        "2092984436396638381",
+        "2092984435205451812",
+        "2092984433649283284",
+        "2092695039931797881",
+        "2092695038270775647",
+        "2092672740197081360",
+        "2092699140803211682",
+        "2093068185830347088",
+        "2092939258243772866"
     ]
 }
