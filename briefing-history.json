@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-08-31",
+    "lastRunDate": "2026-09-02",
     "coveredStoryIds": [
         "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
         "2092299710002319742",
@@ -708,6 +708,26 @@
         "2093480631854678052",
         "2093368017304371503",
         "2094156122441625770",
-        "https://claude.com/blog/how-anthropic-employees-use-claude-tag"
+        "https://claude.com/blog/how-anthropic-employees-use-claude-tag",
+        "2094848572143407483",
+        "2094848581425377479",
+        "2094848579558953258",
+        "2094851229734277228",
+        "2094851231487541376",
+        "2094852929282879596",
+        "2094858049848779056",
+        "2094858037479829953",
+        "2094848591617483020",
+        "2094851236805964100",
+        "2094848588190830982",
+        "2094851235694497836",
+        "2094848585451847721",
+        "2094851239632945398",
+        "2094851238219403582",
+        "2094785686557659252",
+        "2094514311074910596",
+        "2094500508224409852",
+        "https://vercel.com/blog/fluid-compute-takes-any-shape",
+        "https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md"
     ]
 }
