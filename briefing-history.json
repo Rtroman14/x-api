@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-09-09",
+    "lastRunDate": "2026-09-11",
     "coveredStoryIds": [
         "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform",
         "2097638166232457451",
@@ -759,6 +759,17 @@
         "2094514311074910596",
         "2094500508224409852",
         "https://vercel.com/blog/fluid-compute-takes-any-shape",
-        "https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md"
+        "https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md",
+        "2098162488013455784",
+        "2098162491754741780",
+        "2098162490026697134",
+        "2098162493663146411",
+        "2098120133549895978",
+        "2098120135718433024",
+        "2098090911137972271",
+        "2098062605407461744",
+        "2097967205216379355",
+        "2097710169245323303",
+        "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
     ]
 }
