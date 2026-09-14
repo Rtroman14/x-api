@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-09-11",
+    "lastRunDate": "2026-09-14",
     "coveredStoryIds": [
         "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform",
         "2097638166232457451",
@@ -770,6 +770,14 @@
         "2098062605407461744",
         "2097967205216379355",
         "2097710169245323303",
-        "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai"
+        "https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai",
+        "2098500999656923145",
+        "2098501001447870499",
+        "2098501002588823568",
+        "2098501003666702344",
+        "2098508880921899197",
+        "2099172859599880503",
+        "https://vercel.com/blog/how-featureds-users-make-100k-media-pitches-per-month-on-vercel",
+        "https://vercel.com/blog/how-tailscale-built-a-customer-facing-model-router-on-ai-gateway"
     ]
 }
