@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-09-21",
+    "lastRunDate": "2026-09-23",
     "coveredStoryIds": [
         "https://vercel.com/blog/ai-gateway-jev-model-launch",
         "2101303255397494867",
@@ -802,6 +802,14 @@
         "2098508880921899197",
         "2099172859599880503",
         "https://vercel.com/blog/how-featureds-users-make-100k-media-pitches-per-month-on-vercel",
-        "https://vercel.com/blog/how-tailscale-built-a-customer-facing-model-router-on-ai-gateway"
+        "https://vercel.com/blog/how-tailscale-built-a-customer-facing-model-router-on-ai-gateway",
+        "2102435511222890900",
+        "https://claude.com/blog/what-a-task-costs-on-opus-5-5",
+        "2102438806465245246",
+        "2102491840612380934",
+        "2102448392773435706",
+        "2102450917866168453",
+        "2102477690465128755",
+        "2102164930711667127"
     ]
 }
