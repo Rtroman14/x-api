@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-09-30",
+    "lastRunDate": "2026-10-02",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -854,6 +854,14 @@
         "2104676099083190435",
         "2105012114200887434",
         "2105212971307667862",
-        "2105022638368403658"
+        "2105022638368403658",
+        "https://claude.com/blog/claude-code-mods",
+        "2105721434807083061",
+        "https://claude.com/blog/how-anthropics-sales-team-rebuilt-inbound-with-claude-managed-agents",
+        "https://vapi.ai/blog/vapi-personal-agent-calling",
+        "2105787358557999585",
+        "2105819303471976479",
+        "2105947776236376475",
+        "2105951409887949107"
     ]
 }
