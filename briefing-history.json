@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-10-14",
+    "lastRunDate": "2026-10-16",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -901,6 +901,16 @@
         "2110040501416349895",
         "2110148234253652137",
         "2109973273924579720",
-        "https://vapi.ai/blog/ai-code-review-bot"
+        "https://vapi.ai/blog/ai-code-review-bot",
+        "2110866210573386065",
+        "2110825294655562048",
+        "2110421732029063352",
+        "2110445844675838148",
+        "2110785290885538113",
+        "https://vercel.com/blog/introducing-vercel-drives-persistent-storage-for-agents",
+        "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+        "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
+        "2110867556693430293",
+        "2110818314499072493"
     ]
 }
