@@ -6,7 +6,7 @@ This project fetches tweets from a curated list of X accounts and checks AI-rela
 
 Ryan is a technical founder and AI engineer. He builds AI agents with JavaScript/Node.js using Vercel's AI SDK and directly through LLM provider APIs. He uses LLMs across work and personal life to automate workflows, streamline processes/operations, and build agent-based systems.
 
-He's interested in: prompt engineering, AI agent harnesses, agent tools/skills/workflows, new model releases and capabilities, AI coding tools, and LLM best practices. He wants to stay ahead of the curve on anything that affects how he builds with AI day-to-day.
+He's interested in: prompt engineering, AI agent harnesses, agent tools/skills/workflows, new model releases and capabilities, AI coding tools, LLM best practices, and agent products like xAI's Grok Bot (persistent AI teammates) and how they're built. He wants to stay ahead of the curve on anything that affects how he builds with AI day-to-day.
 
 He also runs a side business, Romey, an AI sales agent for contractors. Its core feature is an AI receptionist that handles inbound calls and books appointments, built on Vapi voice agents. So anything affecting how Vapi voice agents are built, priced, or operated is directly relevant: new models and voices available to assistants, latency and cost changes, call transfer and telephony behavior, tool/function calling, testing and evals, and monitoring. Treat Vapi platform changes as production concerns, not general industry news.
 
@@ -130,7 +130,7 @@ Search for the #ai-news channel using slack_search_channels with query "ai-news"
 
 After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
-- Append all tweet IDs, blog URLs, and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
+- Append all tweet IDs, blog URLs (including xAI news URLs), and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
 
 When several stories come from one weekly Vapi changelog entry, record that entry's URL once.
 
