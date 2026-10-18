@@ -1,5 +1,6 @@
 const { subDays, startOfDay } = require("date-fns");
 const { fetchAllVapiUpdates } = require("./fetch-vapi.js");
+const { fetchXaiNewsPosts } = require("./fetch-xai.js");
 
 const CLAUDE_BLOG = "https://claude.com/blog";
 const VERCEL_FEED = "https://vercel.com/atom";
@@ -119,7 +120,7 @@ async function fetchVercelBlogPosts(numDaysAgo) {
  * @param {number} numDaysAgo — how many days back to look
  */
 async function fetchAllBlogUpdates(numDaysAgo) {
-    const [claude, vercel, vapi] = await Promise.all([
+    const [claude, vercel, xai, vapi] = await Promise.all([
         fetchClaudeBlogPosts(numDaysAgo).catch((err) => {
             console.error("Failed to fetch Claude blog:", err.message);
             return [];
@@ -128,13 +129,17 @@ async function fetchAllBlogUpdates(numDaysAgo) {
             console.error("Failed to fetch Vercel blog:", err.message);
             return [];
         }),
+        fetchXaiNewsPosts(numDaysAgo).catch((err) => {
+            console.error("Failed to fetch xAI news:", err.message);
+            return [];
+        }),
         fetchAllVapiUpdates(numDaysAgo).catch((err) => {
             console.error("Failed to fetch Vapi updates:", err.message);
             return { blogPosts: [], changelog: [] };
         }),
     ]);
 
-    return { claude, vercel, vapi };
+    return { claude, vercel, xai, vapi };
 }
 
 module.exports = {

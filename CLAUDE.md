@@ -50,15 +50,18 @@ The watchlist:
 | --- | --- | --- |
 | https://claude.com/blog | Anthropic product updates, model releases, feature announcements | `claude` |
 | https://vercel.com/blog | AI SDK updates, AI-related platform features | `vercel` |
+| https://x.ai/news | xAI product updates: Grok models, Grok Bot, Grok Build, Grok Voice | `xai` |
 | https://vapi.ai/blog/category/agent_building | voice agent building techniques | `vapi.blogPosts` |
 | https://vapi.ai/blog/category/features | new Vapi product features | `vapi.blogPosts` |
 | https://docs.vapi.ai/whats-new | the weekly Vapi changelog | `vapi.changelog` |
 
-`claude`, `vercel`, and `vapi.blogPosts` each return the title, URL, and date of every post in the window. Only include posts genuinely relevant to Ryan's interests.
+`claude`, `vercel`, `xai`, and `vapi.blogPosts` each return the title, URL, and date of every post in the window. Only include posts genuinely relevant to Ryan's interests.
 
 `vapi.changelog` returns the full Markdown of each weekly entry, which is usually a batch of many small items (new models, new voices, bug fixes, API changes). Do not summarize a whole week as one story. Pull out only the individual items that matter for Romey and write each as its own story, or group closely related items into one. Cite the weekly entry URL as the source. Ignore items that don't touch how Romey's receptionist runs, such as changes to unrelated providers or SDKs Ryan doesn't use.
 
 Vercel's feed also carries their `/changelog`, which is deliberately excluded from the watchlist.
+
+x.ai blocks plain HTTP requests with a Cloudflare challenge, so `fetch-xai.js` loads the news page in the pre-installed headless Chromium. If it reports `Failed to fetch xAI news`, treat it as a dead source like any other.
 
 ### Step 4: Filter the results
 
@@ -97,6 +100,11 @@ Source: [Matt Pocock](https://x.com/mattpocockuk/status/123456)
 For blog sources, link to the specific post and use the blog name:
 ```
 Source: [Claude Blog](https://claude.com/blog/post-slug)
+```
+
+For xAI news posts, link to the specific post:
+```
+Source: [xAI News](https://x.ai/news/post-slug)
 ```
 
 For Vapi sources, use the blog or the dated changelog entry:
