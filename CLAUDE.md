@@ -6,7 +6,7 @@ This project fetches tweets from a curated list of X accounts and checks AI-rela
 
 Ryan is a technical founder and AI engineer. He builds AI agents with JavaScript/Node.js using Vercel's AI SDK and directly through LLM provider APIs. He uses LLMs across work and personal life to automate workflows, streamline processes/operations, and build agent-based systems.
 
-He's interested in: prompt engineering, AI agent harnesses, agent tools/skills/workflows, new model releases and capabilities, AI coding tools, LLM best practices, and agent products like xAI's Grok Bot (persistent AI teammates) and how they're built. He wants to stay ahead of the curve on anything that affects how he builds with AI day-to-day.
+He's interested in: prompt engineering, AI agent harnesses, agent tools/skills/workflows, new model releases and capabilities, AI coding tools, LLM best practices, agent products like xAI's Grok Bot (persistent AI teammates) and how they're built, and shadcn/ui, which he uses for frontends and wants to hear about whenever a new component ships. He wants to stay ahead of the curve on anything that affects how he builds with AI day-to-day.
 
 He also runs a side business, Romey, an AI sales agent for contractors. Its core feature is an AI receptionist that handles inbound calls and books appointments, built on Vapi voice agents. So anything affecting how Vapi voice agents are built, priced, or operated is directly relevant: new models and voices available to assistants, latency and cost changes, call transfer and telephony behavior, tool/function calling, testing and evals, and monitoring. Treat Vapi platform changes as production concerns, not general industry news.
 
@@ -51,6 +51,7 @@ The watchlist:
 | https://claude.com/blog | Anthropic product updates, model releases, feature announcements | `claude` |
 | https://vercel.com/blog | AI SDK updates, AI-related platform features | `vercel` |
 | https://x.ai/news | xAI product updates: Grok models, Grok Bot, Grok Build, Grok Voice | `xai` |
+| https://ui.shadcn.com/rss.xml | the shadcn/ui changelog: new components and larger changes | `shadcn` |
 | https://vapi.ai/blog/category/agent_building | voice agent building techniques | `vapi.blogPosts` |
 | https://vapi.ai/blog/category/features | new Vapi product features | `vapi.blogPosts` |
 | https://docs.vapi.ai/whats-new | the weekly Vapi changelog | `vapi.changelog` |
@@ -60,6 +61,8 @@ The watchlist:
 `vapi.changelog` returns the full Markdown of each weekly entry, which is usually a batch of many small items (new models, new voices, bug fixes, API changes). Do not summarize a whole week as one story. Pull out only the individual items that matter for Romey and write each as its own story, or group closely related items into one. Cite the weekly entry URL as the source. Ignore items that don't touch how Romey's receptionist runs, such as changes to unrelated providers or SDKs Ryan doesn't use.
 
 Vercel's feed also carries their `/changelog`, which is deliberately excluded from the watchlist.
+
+`shadcn` returns each changelog entry in the window with its title, URL, date, a one-line description, and the entry's Markdown (code samples stripped). Cover every entry that ships a new component, and any larger change: new primitives or patterns (like AI Elements), CLI or registry features, breaking changes, or changes to how components are installed, styled, or imported. Name each new component in the summary and say what it's for. Skip entries that are only small fixes or docs tweaks. If `markdown` is null, write the story from the description.
 
 x.ai blocks plain HTTP requests with a Cloudflare challenge, so `fetch-xai.js` loads the news page in the pre-installed headless Chromium. If it reports `Failed to fetch xAI news`, treat it as a dead source like any other.
 
@@ -71,6 +74,7 @@ Include tweets and blog posts that:
 - Share a tool, repo, or resource worth knowing about
 - Contain meaningful AI engineering insights
 - Change how Vapi voice agents get built, priced, or operated (relevant to Romey)
+- Ship a new shadcn/ui component or a larger shadcn/ui change
 
 Skip anything that is:
 - Hot takes, engagement bait, or personal drama
@@ -107,6 +111,11 @@ For xAI news posts, link to the specific post:
 Source: [xAI News](https://x.ai/news/post-slug)
 ```
 
+For shadcn/ui, link to the changelog entry:
+```
+Source: [shadcn/ui Changelog](https://ui.shadcn.com/docs/changelog/2026-10-ai-elements)
+```
+
 For Vapi sources, use the blog or the dated changelog entry:
 ```
 Source: [Vapi Blog](https://vapi.ai/blog/post-slug)
@@ -115,6 +124,7 @@ Source: [Vapi Changelog](https://docs.vapi.ai/whats-new/2026/7/27)
 
 Formatting rules:
 - Opening line: **AI Briefing — [Day, Month Date]**
+- When a shadcn/ui entry ships a new component, put that story first so it isn't buried
 - Use double asterisks for bold (Slack rendering)
 - Summaries inside blockquotes using > at the start of each line
 - Source links use standard markdown: `[text](url)`
@@ -130,7 +140,7 @@ Search for the #ai-news channel using slack_search_channels with query "ai-news"
 
 After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
-- Append all tweet IDs, blog URLs (including xAI news URLs), and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
+- Append all tweet IDs, blog URLs (including xAI news URLs), shadcn/ui changelog entry URLs, and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
 
 When several stories come from one weekly Vapi changelog entry, record that entry's URL once.
 
