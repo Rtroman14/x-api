@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-10-16",
+    "lastRunDate": "2026-10-19",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -911,6 +911,22 @@
         "https://vercel.com/blog/ai-gateway-production-index-october-2026",
         "https://vercel.com/blog/findings-from-the-1-million-dollar-vercel-sandbox-challenge",
         "2110867556693430293",
-        "2110818314499072493"
+        "2110818314499072493",
+        "2111193980981665837",
+        "2111193969355084011",
+        "2111193957527146711",
+        "2111184284786802881",
+        "2111184282903523440",
+        "2111184279938240959",
+        "2111184278377857410",
+        "2111184276662481202",
+        "2111184275374813362",
+        "2111168901723906176",
+        "2111209208012210409",
+        "2112121596513267845",
+        "2112121609515626890",
+        "2111708560715292675",
+        "2112131671097020895",
+        "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers"
     ]
 }
