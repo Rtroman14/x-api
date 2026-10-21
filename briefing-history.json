@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-10-19",
+    "lastRunDate": "2026-10-21",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -927,6 +927,13 @@
         "2112121609515626890",
         "2111708560715292675",
         "2112131671097020895",
-        "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers"
+        "https://vercel.com/blog/vercel-and-shopify-make-agents-first-class-shoppers",
+        "2112662275660349720",
+        "https://vercel.com/blog/making-every-harness-durable",
+        "https://x.ai/news/incident-sweep",
+        "2112645531076096330",
+        "2112252507762368684",
+        "2112299602510749992",
+        "2112195849866645652"
     ]
 }
