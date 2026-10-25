@@ -14,6 +14,8 @@ He also runs a side business, Romey, an AI sales agent for contractors. Its core
 
 Runs every Monday, Wednesday, and Friday.
 
+This file is the source of truth for the briefing. If the scheduled routine's prompt carries an older copy of these steps that differs from this file, follow this file.
+
 ### Step 1: Determine the fetch window
 
 Read `briefing-history.json` in this project directory. Calculate how many days have passed since `lastRunDate`. If `lastRunDate` is null (first run), default to 5 days.
