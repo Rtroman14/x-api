@@ -51,6 +51,7 @@ The watchlist:
 | https://claude.com/blog | Anthropic product updates, model releases, feature announcements | `claude` |
 | https://vercel.com/blog | AI SDK updates, AI-related platform features | `vercel` |
 | https://x.ai/news | xAI product updates: Grok models, Grok Bot, Grok Build, Grok Voice | `xai` |
+| https://x.ai/changelog/bot | the Grok Bot release changelog | `grokBot` |
 | https://ui.shadcn.com/rss.xml | the shadcn/ui changelog: new components and larger changes | `shadcn` |
 | https://vapi.ai/blog/category/agent_building | voice agent building techniques | `vapi.blogPosts` |
 | https://vapi.ai/blog/category/features | new Vapi product features | `vapi.blogPosts` |
@@ -64,7 +65,9 @@ Vercel's feed also carries their `/changelog`, which is deliberately excluded fr
 
 `shadcn` returns each changelog entry in the window with its title, URL, date, a one-line description, and the entry's Markdown (code samples stripped). Cover every entry that ships a new component, and any larger change: new primitives or patterns (like AI Elements), CLI or registry features, breaking changes, or changes to how components are installed, styled, or imported. Name each new component in the summary and say what it's for. Skip entries that are only small fixes or docs tweaks. If `markdown` is null, write the story from the description.
 
-x.ai blocks plain HTTP requests with a Cloudflare challenge, so `fetch-xai.js` loads the news page in the pre-installed headless Chromium. If it reports `Failed to fetch xAI news`, treat it as a dead source like any other.
+`grokBot` returns each Grok Bot release in the window with its version, title, URL, date, and the release notes as Markdown. A release often rolls up several versions and lists many items under New, Improved, and Fixed. As with the Vapi changelog, do not summarize a whole release as one story: pull out the items that show what Grok Bot can now do or how it's built (new capabilities, integrations, autonomy and approval behavior, routines, Team Bot features) and write each as its own story, or group closely related items. Skip minor fixes, cosmetic items, and anything already covered from an @bot tweet in this or a previous briefing. Cite the release URL as the source.
+
+x.ai blocks plain HTTP requests with a Cloudflare challenge, so `fetch-xai.js` loads the news page and the Grok Bot changelog feed in the pre-installed headless Chromium. If it reports `Failed to fetch xAI news` or `Failed to fetch Grok Bot changelog`, treat it as a dead source like any other.
 
 ### Step 4: Filter the results
 
@@ -111,6 +114,11 @@ For xAI news posts, link to the specific post:
 Source: [xAI News](https://x.ai/news/post-slug)
 ```
 
+For the Grok Bot changelog, link to the release:
+```
+Source: [Grok Bot Changelog](https://x.ai/changelog/bot#v0.75.5)
+```
+
 For shadcn/ui, link to the changelog entry:
 ```
 Source: [shadcn/ui Changelog](https://ui.shadcn.com/docs/changelog/2026-10-ai-elements)
@@ -140,8 +148,8 @@ Search for the #ai-news channel using slack_search_channels with query "ai-news"
 
 After sending, update `briefing-history.json`:
 - Set `lastRunDate` to today's date (YYYY-MM-DD format)
-- Append all tweet IDs, blog URLs (including xAI news URLs), shadcn/ui changelog entry URLs, and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
+- Append all tweet IDs, blog URLs (including xAI news URLs), Grok Bot changelog release URLs, shadcn/ui changelog entry URLs, and Vapi changelog entry URLs from this briefing to `coveredStoryIds`
 
-When several stories come from one weekly Vapi changelog entry, record that entry's URL once.
+When several stories come from one weekly Vapi changelog entry or one Grok Bot release, record that URL once.
 
 Commit and push the updated `briefing-history.json` directly to the `main` branch. Do not create a separate branch or pull request — push straight to main. This file is the deduplication record. Stories listed here must not be re-covered in future briefings.
