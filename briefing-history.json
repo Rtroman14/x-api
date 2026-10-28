@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-10-26",
+    "lastRunDate": "2026-10-28",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -974,6 +974,23 @@
         "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
         "2113717946019397910",
         "https://x.ai/changelog/bot#v0.75.5",
-        "2113736176737845353"
+        "2113736176737845353",
+        "https://vapi.ai/blog/traffic-splitting-is-live",
+        "https://vercel.com/blog/elevenlabs-on-ai-gateway",
+        "https://x.ai/news/grok-bot-sales",
+        "https://x.ai/changelog/bot#v0.77.0",
+        "2115234669805588906",
+        "2114793714531102901",
+        "2114793726602285211",
+        "2115159585548021814",
+        "2115159597489225937",
+        "2114839997568405608",
+        "2114797177671483867",
+        "2115130760009273501",
+        "2115130761951301673",
+        "2114749427889979405",
+        "2115368342898848021",
+        "2115394392273895644",
+        "2114788328868544908"
     ]
 }
