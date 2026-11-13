@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-11-11",
+    "lastRunDate": "2026-11-13",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -1066,6 +1066,18 @@
         "https://docs.vapi.ai/whats-new/2026/11/9",
         "https://vercel.com/blog/ai-gateway-production-index-november-2026",
         "2120260969750540327",
-        "2119888414736859356"
+        "2119888414736859356",
+        "https://vapi.ai/blog/agent-loop-launch",
+        "2120938988165091693",
+        "2120973994191094179",
+        "2120962481225146636",
+        "2120582957782200586",
+        "https://x.ai/changelog/bot#v1.0.1",
+        "2120946968403095906",
+        "2120594418231398677",
+        "2120838662254420341",
+        "2121211579098083668",
+        "2120974997456146699",
+        "2120585254511710374"
     ]
 }
