@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-11-16",
+    "lastRunDate": "2026-11-18",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -1093,6 +1093,29 @@
         "2121411147714970092",
         "https://cursor.com/blog/security-incident-update",
         "2121258621816230032",
-        "2121331227009364340"
+        "2121331227009364340",
+        "https://vercel.com/blog/eve-is-now-generally-available",
+        "https://vercel.com/blog/agent-evals",
+        "2122801681939234950",
+        "2122457608963395586",
+        "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+        "2122751844455956760",
+        "2122751847400411302",
+        "2122751848964841675",
+        "2122751850265112746",
+        "https://claude.com/blog/linked-billing-on-claude-platform",
+        "2122439098740674839",
+        "2122439100854939907",
+        "2122439102981390562",
+        "2122439104419790958",
+        "2122821051910684824",
+        "2122770660720333073",
+        "2122770673001251011",
+        "2122618527840354327",
+        "2122659341685694586",
+        "2122420795716653204",
+        "https://x.ai/news/grok-bot-accounting",
+        "2122771386456551516",
+        "https://x.ai/changelog/bot#v1.2.0"
     ]
 }
