@@ -1,5 +1,5 @@
 {
-    "lastRunDate": "2026-11-25",
+    "lastRunDate": "2026-11-27",
     "coveredStoryIds": [
         "https://claude.com/blog/build-plugins-for-claude",
         "https://vercel.com/blog/state-of-agent-skills",
@@ -1154,6 +1154,8 @@
         "2124973389802885240",
         "2124973402431885621",
         "2125277263314792687",
-        "2125540436483711074"
+        "2125540436483711074",
+        "2125628717263372512",
+        "2125779541952246039"
     ]
 }
